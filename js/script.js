@@ -1,6 +1,7 @@
 const rock = 0;
 const scissors = 1;
 const paper = 2;
+const m = 3;
 
 // попросим игрока ввести ответ в виде числа
 let player = parseInt(prompt('Your choice: 0 - rock, 1 - scissors, 2 - paper'));
