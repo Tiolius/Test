@@ -137,7 +137,7 @@ window.addEventListener('load', function() {
 
 })*/
 
-/* Контекст */
+/* Контекст
 window.onscroll = function() {console.log(this);};
 const button = document.querySelector('.button');
 
@@ -147,7 +147,7 @@ button.onclick = function() {
 
 button.onclick = () => { // Контекст стрелочной функции всегда window
   console.log(this);
-};
+};*/
 
 /* Отмена событий по умолчанию
 const form = document.querySelector('form');
@@ -176,3 +176,86 @@ closemenu.onclick = function() {
   menu.style.left = '-50vw';
 }
 */
+
+/*Math
+let number = prompt('Введите число:');
+
+function calc(num) {
+  return Math.abs(num ** Math.floor(Math.random() * (10 - 1) + 1));
+}
+
+console.log(calc(number));
+
+function moduleSquare(num) {
+    return Math.abs(num)/2;
+}
+console.log(moduleSquare(-3));
+console.log(moduleSquare(3));
+console.log(Math.floor(2.456));
+console.log(Math.round(2.456));
+console.log(Math.random());
+console.log(Math.floor(Math.random()*(10-5)+5));
+*/
+
+/*Объект
+let person = {
+  firstname : "Иван",
+  lastname : "Иванов",
+  age : 30,
+  teacher : true,
+  sayHello : function () {
+    return 'Hello ' + this.firstname
+  }
+}
+
+console.log(person.firstname)
+console.log(person.sayHello());
+
+person.canCode = true;
+person.age = 29;
+*/
+
+/*Массивы
+let people = ['Vasya','Petya','Sasha']
+console.log(people);
+console.log(people[2]);
+people[2] = "Yura";
+console.log(people[2]);
+console.log(people.length);
+
+let bigArray = [
+    [1,2,3],
+    [true,false],
+    ['a','b','c']
+]
+console.log(bigArray[0][1]);
+
+let bigObject = {
+  name : ['Vasya','Petya','Sasha'],
+  grades : [
+    {
+      intern: 1,
+      junior : 2,
+    },
+    {
+      middle: 3,
+      senior: 2
+    }
+  ]
+}
+
+console.log(bigArray.name[1]);
+console.log(bigArray.grades);
+console.log(bigArray.grades[1].middle);
+*/
+
+/*Массив forms
+const form = document.forms[0];
+const insert = document.querySelector('.total')
+
+form.onsubmit = function(e) {
+  e.preventDefault();
+  let calc = Math.sin(form.elements.quantility.value * Math.PI / 180);
+  let result = calc.toFixed(5)
+  insert.innerHTML = result;
+}*/
