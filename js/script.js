@@ -259,3 +259,20 @@ form.onsubmit = function(e) {
   let result = calc.toFixed(5)
   insert.innerHTML = result;
 }*/
+
+/*Цикл while
+const items = document.getElementsByTagName('li');
+console.log(items);
+let counter = 0;
+while(counter < items.length) {
+  items[counter].innerHTML = counter + 1;
+  counter++;
+}*/
+
+/*Цикл for
+for (let i = 1;i<100000; i++){
+  if (i%6 === 0) console.log(i);
+}
+*/
+
+/*Циклы for of и for in */
