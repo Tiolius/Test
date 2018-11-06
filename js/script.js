@@ -275,4 +275,24 @@ for (let i = 1;i<100000; i++){
 }
 */
 
-/*Циклы for of и for in */
+/*Циклы for of и for in
+const buttons = document.querySelectorAll('button');
+
+let button;
+for (button of buttons) {
+  button.style.backgroundColor = 'red';
+}
+
+let person = {
+  firstname: 'Stas',
+  lastname: 'bozhenko',
+  age: 30
+}
+
+let key;
+for(key in person){
+  console.log(person[key]);
+}*/
+
+/*Цикл forEach*/
+
