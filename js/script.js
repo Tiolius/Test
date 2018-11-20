@@ -287,7 +287,7 @@ let person = {
   firstname: 'Stas',
   lastname: 'bozhenko',
   age: 30
-}
+};
 
 let key;
 for(key in person){

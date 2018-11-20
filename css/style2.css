@@ -1,0 +1,13 @@
+html {
+    color: black;
+}
+h1 {
+    font: 18px "Comic Sans MS";
+    color: purple;
+    background: aqua;
+}
+h2{
+    color: silver;
+}
+p {font: medium "Comic Sans MS"}
+span.warning {font-weight: bold;}
