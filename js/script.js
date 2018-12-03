@@ -294,5 +294,64 @@ for(key in person){
   console.log(person[key]);
 }*/
 
-/*Цикл forEach*/
+/*Цикл forEach
 
+const button = document.querySelector('button');
+const lorems = document.querySelectorAll('div');
+
+button.onclick = () =>{
+	lorems.forEach((lorem) => {
+		lorem.style.fontSize = '30px';
+  })
+}
+*/
+
+/*Практика 1
+
+let names = [
+  [
+    ['куры', 'гуси', 'павлины'],
+    ['сокол', 'орел', 'соловей']
+  ],
+  [
+    ['собака', 'кошка'],
+    ['обезьяна', 'рысь']
+  ]
+]
+
+names.forEach(function(nameExpl){
+  nameExpl.forEach((animals) => {
+    animals.forEach(function(animal){
+      console.log(animal);
+    })
+  })
+})*/
+
+/*Практика 2
+let crypto = [
+  {
+    name : "Bitcoin",
+    price: 1388.37
+  },
+  {
+    name : "Ethereum",
+    price: 716
+  },
+  {
+    name : "Litecoin",
+    price: 140
+  }
+]
+
+var maxprice = 0;
+for (var i = 0; i < crypto.length; i++){
+	  if (maxprice < crypto[i]['price']) maxprice = crypto[i]['price']
+}
+for (var i = 0; i < crypto.length; i++){
+		document.body.innerHTML += '<div>';
+		document.body.innerHTML += '<p><b>' + crypto[i]['name'] + '</b></p>';
+		document.body.innerHTML += '<p>' + crypto[i]['price'] + '</p>';
+		document.body.innerHTML += '<meter value="' + crypto[i]['price'] + '" max="' + maxprice + '"></meter>';
+		document.body.innerHTML += '</div>';
+}
+*/

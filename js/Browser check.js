@@ -55,4 +55,3 @@ function detectIE() {
   // other browser
   return false;
 }
-
